@@ -7,13 +7,9 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: loginPage(),
+      home: LoginPage(),
     );
   }
 }
@@ -34,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center( 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          children: const <Widget>[
           ],
         ),
       ),
